@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #nav{
+            display: flex;
+            font-family: 'Poppins';
+            background-color:crimson;
+            padding: 10px;
+            height: 30px;
+            justify-content: right;
+            
+        }
+
+        #nav a{
+            color: bisque;
+            text-decoration: none;
+            
+            padding: 4px 50px 60px 20px;
+        }
+
+        #nav a:hover{
+            color:darkseagreen;
+            transition: 0.3s all;
+        }
+
+        #body{
+            background-color: black;
+            
+        }
+
+        #img2{
+            display: flex;
+            align-items: center;
+        }
+
+        h1{
+            position: relative;
+            color: white;
+            font-family: 'Poppins';
+            text-align: center;
+            font-size: 50px;
+            bottom: 280px;
+            
+            /* animations part */
+            animation-duration: 8s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+
+        }
+
+        #footer{
+            display: flex;
+            justify-content: left;
+            background-color: crimson;
+            font-family: 'Poppins';
+            height: 70px;
+        }
+
+        #footer a{
+            text-decoration: none;
+            color: bisque;
+            padding: 23px 20px 10px 40px;
+            
+        }
+
+        #footer a:hover{
+            color: darkseagreen;
+            transition: 0.3 all;
+        }
+
+        /* animations part */
+        @keyframes slidein {
+            0% {
+                margin-left: 0%;
+            }
+            50% {
+                margin-left: 700px;
+            }
+            100% {
+                margin-left: 0%;
+            }
+}
+    </style>
+</head>
+<body>
+    <div id="nav">  <a href="home">Home</a> <a href="aboutus">About Us</a> <a href="contactus">Contact Us</a></div>
+
+    <div id="body"> <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Car" width="27%"> 
+    
+    <h1>Audi Cars</h1>
+    
+    </div>
+
+    <div id="footer"> <a href="aboutus">About Us</a> <a href="contactus">Contact Us</a> <a href="terms">Terms & Conditions</a> </div>
+</body>
+</html>
